@@ -11,3 +11,9 @@ Fun project.
 4. Now navigate to the root of your NamelessMC installation, and copy `/themes/Material/*` to `Nameless/styles/themes/Material/*`
 5. Copy `/templates/Material/*` to `Nameless/styles/templates/Material/*`
 6. Install and Activate the theme and the template from the Admin CP of your Nameless installation.
+
+## Screenshots?
+Sure: (http://imgur.com/a/VMEUv)[http://imgur.com/a/VMEUv]
+
+## Current Contributors
+[@masterdoctor](https://github.com/masterdoctor/)

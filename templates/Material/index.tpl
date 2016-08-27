@@ -7,7 +7,7 @@
 <div class="container">
   {$SESSION_FLASH}
   <div class="row">
-    <div class="col-md-9">
+    <div class="{if !empty($TWITTER_FEED) || !empty($VOICE_VIEWER)}col-md-8{else}col-md-12{/if}">
 	  <!-- News -->
 	  <h2>{$NEWS}</h2>
 	  {foreach from=$newsArray item=news}
@@ -38,10 +38,11 @@
 		</div>
 	  {/foreach}
 	</div>
-	<div class="col-md-3">
+	{if !empty($TWITTER_FEED) || !empty($VOICE_VIEWER)}
+	<div class="col-md-3 col-md-push-1">
 	  <!-- Social -->
-	  <h2>{$SOCIAL}</h2>
 	  {if !empty($TWITTER_FEED)}
+	  <h2>{$SOCIAL}</h2>
 	  {$TWITTER_FEED}
 	  {/if}
 	  
@@ -57,5 +58,6 @@
 	  {/if}
 	  {/if}
 	</div>
+	{/if}
   </div>
 </div>

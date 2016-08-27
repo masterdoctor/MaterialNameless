@@ -2581,3 +2581,19 @@ footer.page-footer .footer-copyright {
   position: absolute;
   bottom: 0;
 }
+hr.invisible {
+	margin-top: 21px;
+	margin-bottom: 21px;
+	border: none;
+}
+hr {
+	width: 90%;
+}
+
+.reply-username {
+	color: #78909c;
+}
+
+.reply-username:hover {
+	
+}

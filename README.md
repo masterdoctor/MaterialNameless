@@ -13,7 +13,7 @@ Fun project.
 6. Install and Activate the theme and the template from the Admin CP of your Nameless installation.
 
 ## Screenshots?
-Sure: (http://imgur.com/a/VMEUv)[http://imgur.com/a/VMEUv]
+Sure: [http://imgur.com/a/VMEUv](http://imgur.com/a/VMEUv)
 
 ## Current Contributors
 [@masterdoctor](https://github.com/masterdoctor/)

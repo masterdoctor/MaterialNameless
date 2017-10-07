@@ -14,19 +14,19 @@ if(!isset($admin_styles)){
   // Paths to CSS files
   $css = array(
     (defined('CONFIG_PATH') ? CONFIG_PATH : '') . 'https://fonts.googleapis.com/icon?family=Material+Icons',
-    (defined('CONFIG_PATH') ? CONFIG_PATH : '') . '/custom/templates/MaterialNameless/css/material.min.css',
   	(defined('CONFIG_PATH') ? CONFIG_PATH : '') . '/custom/templates/Default/css/bootstrap.min.css',
   	(defined('CONFIG_PATH') ? CONFIG_PATH : '') . '/core/assets/css/custom.css',
   	(defined('CONFIG_PATH') ? CONFIG_PATH : '') . '/core/assets/css/font-awesome.min.css',
+	(defined('CONFIG_PATH') ? CONFIG_PATH : '') . '/custom/templates/MaterialNameless/css/material.min.css',
   	(defined('CONFIG_PATH') ? CONFIG_PATH : '') . '/custom/templates/MaterialNameless/css/custom.css'
   );
 
   $js_sources = array(
   	(defined('CONFIG_PATH') ? CONFIG_PATH : '') . '/custom/templates/Default/js/jquery.min.js',
   	(defined('CONFIG_PATH') ? CONFIG_PATH : '') . '/custom/templates/Default/js/tether.min.js',
+	(defined('CONFIG_PATH') ? CONFIG_PATH : '') . '/custom/templates/Default/js/bootstrap.min.js',
 	(defined('CONFIG_PATH') ? CONFIG_PATH : '') . '/custom/templates/MaterialNameless/js/material.min.js',
-	(defined('CONFIG_PATH') ? CONFIG_PATH : '') . '/custom/templates/MaterialNameless/js/custom.js',
-  	(defined('CONFIG_PATH') ? CONFIG_PATH : '') . '/custom/templates/Default/js/bootstrap.min.js'
+	(defined('CONFIG_PATH') ? CONFIG_PATH : '') . '/custom/templates/MaterialNameless/js/custom.js'
   );
 
   if(defined('PAGE') && PAGE == 'cc_messaging'){

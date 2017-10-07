@@ -6,9 +6,11 @@
 	<div class="container">
 	  <div class="row">
 		<div class="col-md-9">
-		  <ol class="breadcrumb">
-		    <li><a href="{$BREADCRUMB_URL}">{$BREADCRUMB_TEXT}</a></li>
-		  </ol>
+		  <div class="sjh-margin__bottom-small">
+			  <button type="button" class="mdl-chip sjh-link-btn" href="{$BREADCRUMB_URL}">
+				<span class="mdl-chip__text">{$BREADCRUMB_TEXT}</span>
+			  </button>
+		  </div>
 		  
 		  {if isset($SPAM_INFO)}
 		  <div class="alert alert-info">{$SPAM_INFO}</div>
@@ -61,31 +63,35 @@
 		</div>
 		<div class="col-md-3">
 		
-		  <form class="form-horizontal" role="form" method="post" action="{$SEARCH_URL}">
-		    <div class="input-group">
-			  <input type="text" class="form-control input-sm" name="forum_search" placeholder="{$SEARCH}">
-			  <input type="hidden" name="token" value="{$TOKEN}">
-			  <span class="input-group-btn">
-			    <button type="submit" class="btn btn-default">
-				  <i class="fa fa-search"></i>
-			    </button>
-			  </span>
-		    </div>
-		  </form>
+			<form action="{$SEARCH_URL}" method="post">
+				<div class="mdl-textfield mdl-js-textfield">
+				  <input class="mdl-textfield__input sjh-mdl-textfix" type="text" id="search" name="forum_search">
+				  <input type="hidden" name="token" value="{$TOKEN}">
+				  <label class="mdl-textfield__label" for="search"><i class="material-icons">search</i></label>
+				</div>
+			</form>
 		  
 		  <br />
 		  
-		  <div class="card">
-		    <div class="card-block">
-			  <h2>{$STATS} <i class="fa fa-bar-chart"></i></h2>
-			  {$USERS_REGISTERED}<br />
-			  {$LATEST_MEMBER}
-			  
-			  <hr />
-			  
-			  <h3>{$ONLINE_USERS}</h3>
-			  {$ONLINE_USERS_LIST}
-			  
+		  <div class="mdl-card mdl-shadow--3dp" style="width:100%;height:auto;min-height:unset;">
+			<div class="mdl-card__title">
+				<h2 class="mdl-card__title-text">{$STATS}</h2>
+			</div>
+			
+			<div class="mdl-card__supporting-text">
+				<p>{$USERS_REGISTERED}<br>{$LATEST_MEMBER}</p>
+			</div>
+		  </div>
+		  
+		  <br>
+		  
+		  <div class="mdl-card mdl-shadow--3dp" style="width:100%;height:auto;min-height:unset;">
+			<div class="mdl-card__title">
+				<h2 class="mdl-card__title-text">{$ONLINE_USERS}</h2>
+			</div>
+			
+			<div class="mdl-card__supporting-text">
+				{$ONLINE_USERS_LIST}
 			</div>
 		  </div>
 
@@ -102,4 +108,5 @@
   </div>
 </div>
 </div>
+
 {include file='footer.tpl'}

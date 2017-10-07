@@ -129,3 +129,11 @@
 	
 	text-align: center;
 }
+
+.sjh-margin__bottom-small {
+	margin-bottom: 20px;
+}
+
+.sjh-mdl-textfix:after {
+	bottom: 12px;
+}

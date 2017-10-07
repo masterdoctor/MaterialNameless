@@ -42,3 +42,7 @@ $(document).ready(function(){
 		}
 	}, 100);
 });
+
+$(".sjh-link-btn").click(function(){
+	window.location.href = $(this).attr("href");
+});

@@ -2,7 +2,7 @@
 	<header class="mdl-layout__header mdl-layout__header--scroll mdl-layout--no-desktop-drawer-button">
 		
 		<div class="mdl-layout__header-row">
-			<span class="mdl-layout__title">{$SITE_NAME}</span>
+			<span class="mdl-layout__title"><a href="/" style="color:white;">{$SITE_NAME}</a></span>
 			<div class="mdl-layout-spacer"></div>
 			<nav class="mdl-navigation mdl-layout--large-screen-only">
 				{foreach from=$NAV_LINKS key=name item=item}
